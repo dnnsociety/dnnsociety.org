@@ -23,6 +23,10 @@
 	width: 10%;
 }
 
+.guerrillagravatar img {
+	border-radius: 50%;
+}
+
 .guerrillatext {
 	float: left;
 	width: 84%;
