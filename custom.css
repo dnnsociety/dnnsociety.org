@@ -7,3 +7,20 @@ Click the help icon above to learn more.
 #menu-secondary-menu {
 	display:none
 }
+
+.site-title{
+	font-size: 2.9rem
+}
+
+@media only screen and (max-width: 40em){
+	.site-title-wrapper-inner .site-title {
+		font-size: 32px;
+	}
+}
+
+@media only screen and (max-width: 64em) and (min-width: 40.063em){
+	.site-title-wrapper-inner .site-title {
+		font-size: 36px;
+	}
+}
+
