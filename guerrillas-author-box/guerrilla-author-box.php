@@ -66,11 +66,8 @@ function guerrilla_add_post_content($content) {
 	if (is_single()) { 
 		$content .= '
 			<div class="guerrillawrap">
-			<div class="guerrillagravatar">
-				'. get_avatar( get_the_author_email(), '80' ) .'
-			</div>
 			<div class="guerrillatext">
-				<h4>By: <span>'. get_the_author_link('display_name',get_query_var('author') ) .'</span></h4>'. get_the_author_meta('description',get_query_var('author') ) .'
+				<p>Post By: <span>'. get_the_author_link('display_name',get_query_var('author') ) .'</span></p>'.'
 			</div>
 		';
 		$content .= '
