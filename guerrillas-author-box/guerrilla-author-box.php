@@ -65,9 +65,9 @@ add_filter ('the_content', 'guerrilla_add_post_content', 0);
 function guerrilla_add_post_content($content) {
 	if (is_single()) { 
 		$content .= '
-			<div class="guerrillawrap">
-			<div class="guerrillatext">
-				<p>Post By: <span>'. get_the_author_link('display_name',get_query_var('author') ) .'</span></p>'.'
+			<div class="_guerrillawrap">
+			<div class="_guerrillatext">
+				<p>---<br>Posted by: <span>'. get_the_author_link('display_name',get_query_var('author') ) .'</span></p>'.'
 			</div>
 		';
 		$content .= '
@@ -85,6 +85,8 @@ function guerrilla_add_post_content($content) {
 				$content .= '<a href="' . esc_url( get_the_author_meta( 'dribbble' ) ) . '" target="_blank"><i class="fa fa-dribbble"></i> Dribbble</a> ';
 			if( get_the_author_meta('github',get_query_var('author') ) )
 				$content .= '<a href="' . esc_url( get_the_author_meta( 'github' ) ) . '" target="_blank"><i class="fa fa-github"></i> Github</a>';
+			if( get_the_author_meta('url',get_query_var('author') ) )
+				$content .= '<a href="' . esc_url( get_the_author_meta( 'url' ) ) . '" target="_blank"><i class="fa fa-external-link"></i> Website</a>';
 		$content .= '
 			</div>
 			</div>
