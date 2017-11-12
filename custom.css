@@ -1,9 +1,3 @@
-/*
-You can add your own CSS here.
-
-Click the help icon above to learn more.
-*/
-
 #menu-secondary-menu {
 	display:none
 }
@@ -12,15 +6,21 @@ Click the help icon above to learn more.
 	font-size: 2.9rem
 }
 
-@media only screen and (max-width: 40em){
-	.site-title-wrapper-inner .site-title {
-		font-size: 32px;
+@media(max-width: 40em){
+	.site-title-wrapper-inner .site-title{
+		font-size:32px;
+	}
+	.single .page-title, .single .entry-title{
+		font-size:1.7rem;
+	}
+	div.entry-content h2{
+		font-size: 1.1875rem;
 	}
 }
 
-@media only screen and (max-width: 64em) and (min-width: 40.063em){
-	.site-title-wrapper-inner .site-title {
-		font-size: 36px;
+@media(max-width: 64em) and (min-width: 40.063em){
+	.site-title-wrapper-inner .site-title{
+		font-size:36px;
 	}
 }
 
